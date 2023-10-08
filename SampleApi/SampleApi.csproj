@@ -19,4 +19,9 @@
     </PackageReference>
   </ItemGroup>
 
+
+	<ItemGroup>
+		<InternalsVisibleTo Include="SampleApi.Tests.Integration" />
+	</ItemGroup>
+
 </Project>

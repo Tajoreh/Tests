@@ -36,3 +36,4 @@ app.MapPost("create", async ([FromBody] Company company, ICompanyRepository repo
 });
 
 app.Run();
+public partial class Program { }

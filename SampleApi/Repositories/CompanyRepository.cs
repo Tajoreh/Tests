@@ -24,9 +24,6 @@ public class CompanyRepository : ICompanyRepository
     public async Task<Company?> Get(int companyId) =>
         await dbContext
             .Set<Company>()
-            .AsSplitQuery()
-            .Include(x => x.Employees)
-            .AsNoTracking()
             .FirstOrDefaultAsync(c => c.Id == companyId);
 
 }
